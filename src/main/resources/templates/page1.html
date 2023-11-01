@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<!-- <p th:text="${obj.roll}">Roll</p><br>
+<p th:text="${obj.name}">NAME</p><br>
+<p th:text="${obj.address}">Address</p><br> -->
+
+<div th:object="${obj}">
+
+Roll =<h3 th:text="*{id}">Roll</h3><br>
+Name =<h3 th:text="*{name}">Name</h3><br>
+Address =<h3 th:text="*{address}">Address</h3><br>
+
+
+</div>
+
+
+</body>
+</html>
